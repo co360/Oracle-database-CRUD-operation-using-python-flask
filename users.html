@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>MyUsers Table</h1>
+<table border = 1>
+  {% for MyUsers in details %}
+  <tr>
+    <td> {{MyUsers[0]}} </td>
+    <td> {{MyUsers[1]}} </td>
+    <td> {{MyUsers[2]}} </td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock content %}
+
